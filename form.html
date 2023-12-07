@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="/process-payment" method="post">
+        <h2>Payment Information</h2>
+
+        <label for="card-number">Item:</label>
+        <input type="text" name="card-number" id="card-number" required>
+      
+        <label for="card-number">Card Number:</label>
+        <input type="text" name="card-number" id="card-number" required>
+      
+        <label for="cardholder-name">Cardholder Name:</label>
+        <input type="text" name="cardholder-name" id="cardholder-name" required>
+      
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="month" name="expiry-date" id="expiry-date" required>
+      
+        <label for="cvv">CVV:</label>
+        <input type="password" name="cvv" id="cvv" maxlength="3" required>
+      
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" id="amount" min="0.01" step="0.01" required>
+      
+        <button type="submit">Pay Now</button>
+      </form>
+      
+</body>
+</html>
